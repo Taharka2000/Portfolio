@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
