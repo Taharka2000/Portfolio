@@ -114,7 +114,7 @@ export default function Home() {
             </div>
             <div className="right-column">
               <h3>A bit About Me</h3>
-              <p> Développeur junior passionné avec une solide formation académique en informatique et une expérience pratique dans le développement de logiciels. et ayant une bonne compréhension des concepts de développement web et mobile. Capable de travailler efficacement en équipe ou de manière autonome, avec un fort désir d'apprendre et de s'adapter aux nouvelles technologies. Engagé à fournir des solutions de haute qualité et à contribuer activement aux projets de développement.?</p>
+              <p> Développeur junior passionné avec une solide formation académique en informatique et une expérience pratique dans le développement de logiciels. et ayant une bonne compréhension des concepts de développement web et mobile. Capable de travailler efficacement en équipe ou de manière autonome, avec un fort désir d apprendre et de s adapter aux nouvelles technologies. Engagé à fournir des solutions de haute qualité et à contribuer activement aux projets de développement.?</p>
               <p></p>
             </div>
           </div>
