@@ -179,7 +179,7 @@ export default function Home() {
               <img src="images/exp3.png" alt="Workplace-1" width="100%" />
             </a>
             <a href="#" className="bento-item">
-              <img src="images/exp3.png" alt="Workplace-1" width="100%" />
+              <img src="" alt="Workplace-1" width="100%" />
             </a>
             <a href="#" className="bento-item">
               <img src="images/exp3.png" alt="Workplace-1" width="100%" />
