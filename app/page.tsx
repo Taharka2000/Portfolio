@@ -40,7 +40,7 @@ export default function Home() {
         <section className="hero container">
           <div className="hero-blue">
             <div>
-              <h1><small>Hi I'm</small> Sammba Yero Taharka Sow</h1>
+              <h1><small>Hi I m</small> Sammba Yero Taharka Sow</h1>
               <p>
                 Software developer in Senegal . <span></span>
               </p>
