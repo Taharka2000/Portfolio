@@ -9,6 +9,9 @@ export default function Home() {
   }
   return (
     <>
+     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <header>
         <a href="#" className="logo-holder">
           <div className="logo">L</div>
