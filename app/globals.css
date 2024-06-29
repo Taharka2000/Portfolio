@@ -1,3 +1,4 @@
+/* Ajouter des styles de base */
 *,
 *::before,
 *::after {
@@ -16,7 +17,7 @@
   --yellow-400: #ffda4b;
   --yellow-800: #8b6f00;
   --blue: #0a61ae;
-  --blue--100: #e2f8ff;
+  --blue-100: #e2f8ff;
   --blue-400: #61dafb;
   --blue-800: #0a61ae;
 }
@@ -102,7 +103,7 @@ header {
       color: var(--base-800);
       padding: 10px;
 
-      @media (max-width:768px) {
+      @media (max-width: 768px) {
         display: inline-block;
         position: absolute;
         top: 20px;
@@ -111,12 +112,12 @@ header {
     }
   }
 
-  @media (max-width:1024px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
   }
 
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
 
@@ -149,7 +150,7 @@ header {
   gap: 30px;
   margin-bottom: 30px;
 
-  @media(max-width:1440px) {
+  @media (max-width: 1440px) {
     padding-left: 30px;
     margin: 30px;
   }
@@ -159,7 +160,7 @@ header {
   display: inline-block;
   padding: 10px 30px;
   background-color: var(--blue);
-  columns: var(--base-100);
+  color: var(--base-100);
   border-radius: 10px;
   transition: ease 0.3s all;
 
@@ -199,7 +200,7 @@ h1 {
     font-weight: 100;
   }
 
-  @media (max-width:1024px) {
+  @media (max-width: 1024px) {
     font-size: 48px;
   }
 }
@@ -207,13 +208,13 @@ h1 {
 .hero {
   display: flex;
 
-  @media (max-width:1024px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
   }
 
   .hero-blue {
     flex: 1;
-    background-color: var(--blue--100);
+    background-color: var(--blue-100);
     border-radius: 30px;
     padding: 30px;
     display: flex;
@@ -221,7 +222,7 @@ h1 {
     justify-content: center;
 
     span {
-      @media (max-width:768px) {
+      @media (max-width: 768px) {
         display: none;
       }
     }
@@ -257,7 +258,6 @@ h1 {
     img {
       margin-top: -60px;
       max-width: 420px;
-
     }
   }
 }
@@ -266,7 +266,7 @@ h1 {
   background-color: var(--base-100);
   border-radius: 30px;
   padding: 30px 0px;
-  @media (max-width:1440px){
+  @media (max-width: 1440px) {
     border-radius: none;
   }
 
@@ -301,48 +301,57 @@ h1 {
     transform: translateX(-50%);
   }
 }
-h2{
+
+h2 {
   font-size: 64px;
   line-height: 1;
   margin-bottom: 10px;
   text-align: center;
   color: var(--base-800);
   padding: 30px;
-  small{
+
+  small {
     display: block;
     font-weight: 100;
     font-size: 0.5em;
     color: var(--base);
   }
-  @media (max-width:1024px) {
+
+  @media (max-width: 1024px) {
     font-size: 48px;
   }
 }
-h3{
+
+h3 {
   font-size: 32px;
   font-weight: 600;
   line-height: 1;
   color: var(--base-800);
 }
+
 .skills {
   .holder-blue {
-    background-color: var(--blue--100);
+    background-color: var(--blue-100);
     border-radius: 30px;
     padding: 30px;
     display: flex;
-    @media (max-width:1024px) {
+
+    @media (max-width: 1024px) {
       flex-direction: column;
     }
-    .left-column{
+
+    .left-column {
       flex: 1;
-      ul{
+
+      ul {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
         gap: 10px;
         margin-right: 100px;
         margin-bottom: 20px;
-        li{
+
+        li {
           display: inline-block;
           background-color: var(--blue-400);
           padding: 10px 20px;
@@ -351,170 +360,19 @@ h3{
         }
       }
     }
-    .right-column{
+
+    .right-column {
       flex: 1;
-      p{
-        margin-bottom: 20px;
-      }
-    }
-  }
-}
-.work-experience{
-  .jobs{
-    display: flex;
-    gap: 30px;
-    @media(max-width:1024px){
-      flex-direction: column;
-    }
-    article{
-      background-color: var(--yellow-100);
-      padding: 30px;
-      border-radius: 30px;
-      flex: 1;
-      h3{
-        margin-top: 20px;
-        margin-bottom: 10px;
-      }
-      div{
-        font-weight: 600;
-        margin-bottom: 5px;
-        color: var(--base-800);
-      }
-      p{
-        margin-bottom: 10px;
-      }
-      figure{
-        width: 100%;
-        padding-top: 56.25%;
-        overflow: hidden;
-        position: relative;
-        border-radius: 15px;
-        img{
-          position: absolute;
-          top:0;
-          left: 0;
-          height: 100%;
-          object-fit: cover;
-          transition: ease 3s all;
-        }
-        figcaption{
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background-color: rgba(0, 0, 0, 0.5);
-          color: var(--base-100);
-          text-align: center;
-          padding: 10px;
-          opacity: 0;
-          visibility: hidden;
-          transition: ease 0.3s all;
-        }
-        &:hover{
-          figcaption{
-            opacity: 1;
-            visibility: visible;
-            
-          }
-          img{
-            transform: scale(1.2);
-          }
-        }
-      }
-    }
-  }
-}
-.bento{
-  .bento-grid{
-    display: grid;
-    grid-gap:30px;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(4,1fr);
-    height: 960px;
-    padding: 90px;
-    @media (max-width:1024px) {
-      grid-template-rows: repeat(8,1fr);
-    }
-    @media (max-width:768px) {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      height: auto;
-      width: 500px;
-      margin-left: -80px;
-    }
-    .bento-item{
-      padding: 30px;
-      background-color: var(--base-100);
-      border-radius: 15px;
-      position: relative;
-      overflow: hidden;
-      img{
-        position: absolute;
-        top:0;
-        left: 0;
-        height: 100%;
-        object-fit: cover;
-        transition: ease 3s all;
-      }
-      &:hover{
-        img{
-          transform: scale(1.2);
-        }
-      }
-      @media (max-width:768px) {
-       
-        height: 240px;
-      }
-      &:nth-child(1){
-        grid-column: span 2;
-        grid-row: span 2;
-        @media (max-width:1024px) {
-          grid-column: span 2;
-          grid-row: span 2;
-        }
-      }
-      &:nth-child(2){
-        grid-column: span 2;
-        grid-row: span 1;
-        @media (max-width:1024px) {
-          grid-column: span 3;
-          grid-row: span 2;
-        }
-      }
-      &:nth-child(3){
-        grid-column: span 1;
-        grid-row: span 1;
-        @media (max-width:1024px) {
-          grid-column: span 3;
-          grid-row: span 2;
-        }
-      }
-      &:nth-child(4){
-        grid-column: span 1;
-        grid-row: span 1;
-        @media (max-width:1024px) {
-          grid-column: span 2;
-          grid-row: span 4;
-        }
-      }
-      &:nth-child(5){
-        grid-column: span 2;
-        grid-row: span 1;
-        @media (max-width:1024px) {
-          grid-column: span 3;
-          grid-row: span 2;
-        }
-      }
-      &:nth-child(6){
-        grid-column: span 5;
-        grid-row: span 3;
-        @media (max-width:1024px) {
-          grid-column: span 5;
-          grid-row: span 2;
-        }
+
+      img {
+        display: block;
+        margin-left: auto;
       }
     }
   }
 }
 
+footer {
+  text-align: center;
+  padding: 10px;
+}
