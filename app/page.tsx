@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
+import "./globals.css";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
