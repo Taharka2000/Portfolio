@@ -127,7 +127,7 @@ export default function Home() {
             Work Experience
           </h2>
           <div className="jobs">
-            <article>
+          {/*   <article>
               <figure>
                 <div>
                   <img src="images/image.png" alt="Workplace-1" width="100%" />
@@ -140,7 +140,7 @@ export default function Home() {
                 travers des projets pratiques, fournissant un soutien
                 technique personnalisé pour initier ou améliorer leurs
                 compétences en codage.</p>
-            </article>
+            </article> */}
             {/*  <article>
               <figure>
                 <div>
