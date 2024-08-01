@@ -121,13 +121,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="work-experience container">
-         {/*  <h2>
+       {/*  <section className="work-experience container">
+           <h2>
             <small>Recent</small>
             Work Experience
-          </h2> */}
-          <div className="jobs">
-          {/*   <article>
+          </h2>
+          <div className="jobs"> 
+          <article>
               <figure>
                 <div>
                   <img src="images/image.png" alt="Workplace-1" width="100%" />
@@ -140,8 +140,8 @@ export default function Home() {
                 travers des projets pratiques, fournissant un soutien
                 technique personnalisé pour initier ou améliorer leurs
                 compétences en codage.</p>
-            </article> */}
-            {/*  <article>
+            </article> 
+             <article>
               <figure>
                 <div>
                   <img src="images/image.png" alt="Workplace-1" width="100%" />
@@ -162,9 +162,9 @@ export default function Home() {
               <h3>Workplace -1</h3>
               <div>2024-Now</div>
               <p>Instructor Web</p>
-            </article> */}
+            </article> 
           </div>
-        </section>
+        </section>  */}
         <section id="projects" className="bento container">
           <h2>
             <small>Previous</small>
