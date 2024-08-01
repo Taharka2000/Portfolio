@@ -122,10 +122,10 @@ export default function Home() {
           </div>
         </section>
         <section className="work-experience container">
-          <h2>
+         {/*  <h2>
             <small>Recent</small>
             Work Experience
-          </h2>
+          </h2> */}
           <div className="jobs">
           {/*   <article>
               <figure>
