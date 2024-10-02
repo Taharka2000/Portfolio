@@ -102,7 +102,7 @@ export default function Home() {
               <ul>
                 <li>Node.js</li>
                 <li>Express</li>
-                <li>SpringBoot</li>
+               {/*  <li>SpringBoot</li> */}
               </ul>
               <h3>CMS</h3>
               <ul>
