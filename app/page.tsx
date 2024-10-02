@@ -47,7 +47,7 @@ export default function Home() {
                 Software developer in Senegal . <span></span>
               </p>
               <div className="call-to-action">
-                <a href="Cv.pdf" className="button black">View Resume</a>
+                <a href="SammbaYeroTaharkaSow.pdf" className="button black">View Resume</a>
                 <a href="mailto:sammbasow1999@gmail.com" className="button white">Contact Me</a>
               </div>
               <div className="social-links">
