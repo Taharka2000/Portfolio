@@ -28,7 +28,7 @@ export default function Home() {
               <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="mailto:sammbasow1999@gmail.com">Contact me</a>
+              <a href="mailto:taharkasow@gmail.com">Contact me</a>
             </li>
           </ul>
           <a href="#" className="mobile-toggle" onClick={toggleMobileMenu} >
