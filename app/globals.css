@@ -248,7 +248,7 @@ h1 {
 
   .hero-yellow {
     flex: 1;
-    background-color: var(--yellow);
+  
     border-radius: 30px;
     padding: 0px 30px;
     display: flex;
@@ -256,8 +256,9 @@ h1 {
     align-items: flex-end;
 
     img {
-      margin-top: -60px;
-      max-width: 420px;
+      margin-top: -10px;
+      max-width: 430px;
+      border-radius: 10px;
     }
   }
 }
