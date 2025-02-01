@@ -61,7 +61,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-yellow">
-            <img src="images/sammba.jpg" alt="Sammba Sow" width="100%" />
+            <img src="images/sammba.JPG" alt="Sammba Sow" width="100%" />
           </div>
         </section>
         <section className="container logos">
