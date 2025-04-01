@@ -72,6 +72,7 @@ export default function Home() {
               <img src="images/mongodb.png" alt="MongoDB" />
               <img src="images/tailwind.png" alt="Tailwind" />
               <img src="images/node.png" alt="Nodejs" />
+              <img src="images/docker.svg" alt="Nodejs" />
               <img src="images/ts.png" alt="Tailwind" />
               <img src="images/css.png" alt="Tailwind" />
               <img src="images/html.png" alt="Tailwind" />
