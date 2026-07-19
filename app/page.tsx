@@ -57,7 +57,7 @@ export default function Home() {
                 <a href="https://github.com/Taharka2000?tab=repositories">
                   <img src="images/github.png" alt="GitHub" width="48" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/sammba-yero-taharka-sow-4863a223a/" target="_blank" rel="noopener noreferrer">
                   <img src="images/linkdin.png" alt="LinkedIn" width="48" />
                 </a>
               </div>
