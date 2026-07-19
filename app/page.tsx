@@ -3,6 +3,69 @@
 import { useState } from "react";
 import "./globals.css";
 
+const projects = [
+  {
+    icon: "🎟️",
+    accent: "blue",
+    title: "BT Events",
+    role: "Développeur Full Stack",
+    description: "Plateforme digitale dédiée à l'organisation, la promotion et la gestion d'événements : vente de billets, gestion des accréditations, collaboration avec des prestataires.",
+    tags: ["Node.js", "React", "Paiement en ligne"],
+    link: "https://btevents.net",
+    linkLabel: "btevents.net",
+  },
+  {
+    icon: "🏗️",
+    accent: "yellow",
+    title: "Africa Bloom Corporate",
+    role: "Développeur Web",
+    description: "Site vitrine pour une entreprise du secteur BTP, pensé pour présenter les activités et l'expertise de l'entreprise.",
+    tags: ["WordPress", "Web Design"],
+    link: "https://africabloomcorporate.com",
+    linkLabel: "africabloomcorporate.com",
+  },
+  {
+    icon: "💼",
+    accent: "blue",
+    title: "Portfolio",
+    role: "Projet Personnel",
+    description: "Site portfolio dynamique construit avec Next.js, à l'interface responsive et moderne.",
+    tags: ["Next.js", "React", "Tailwind"],
+    link: "https://portfolio-eebs.onrender.com",
+    linkLabel: "portfolio-eebs.onrender.com",
+  },
+  {
+    icon: "🔒",
+    accent: "yellow",
+    title: "DevSecOps Pipeline",
+    role: "Projet Personnel",
+    description: "Pipeline CI/CD GitLab automatisé et sécurisé pour une application Angular conteneurisée avec Docker.",
+    tags: ["GitLab CI/CD", "Docker", "Angular", "DevSecOps"],
+    link: "https://www.linkedin.com/in/sammba-yero-taharka-sow-4863a223a/",
+    linkLabel: "Voir sur LinkedIn",
+  },
+  {
+    icon: "⚙️",
+    accent: "blue",
+    title: "CI/CD React + Docker",
+    role: "Projet Personnel",
+    description: "Pipeline GitLab avec Docker pour automatiser le build, les tests et le déploiement d'une application React.",
+    tags: ["GitLab CI/CD", "Docker", "React"],
+    link: "https://gitlab.com/sammba1/alika12",
+    linkLabel: "gitlab.com/sammba1/alika12",
+  },
+  {
+    icon: "📦",
+    accent: "yellow",
+    title: "Architecture Conteneurisée",
+    role: "Projet Personnel",
+    description: "Projet React containerisé avec Docker, incluant un déploiement automatisé de bout en bout.",
+    tags: ["React", "Docker", "Déploiement automatisé"],
+    link: "https://github.com/Taharka2000?tab=repositories",
+    linkLabel: "Voir sur GitHub",
+  },
+];
+
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMobileMenu = () => {
@@ -172,30 +235,31 @@ export default function Home() {
             </article>
           </div>
         </section>
-        <section id="projects" className="bento container">
+        <section id="projects" className="projects container">
           <h2>
             <small>Previous</small>
             Completed Projects
           </h2>
-          <div className="bento-grid">
-            <a href="https://btevents.net" target="_blank" rel="noopener noreferrer" className="bento-item">
-              <img src="images/exp2.png" alt="BT Events" width="100%" />
-            </a>
-            <a href="https://africabloomcorporate.com" target="_blank" rel="noopener noreferrer" className="bento-item">
-              <img src="images/exp3.png" alt="Africa Bloom Corporate" width="100%" />
-            </a>
-            <a href="https://gitlab.com/sammba1/alika12" target="_blank" rel="noopener noreferrer" className="bento-item">
-              <img src="images/exp3.png" alt="Pipeline CI/CD React + Docker" width="100%" />
-            </a>
-            <a href="https://portfolio-eebs.onrender.com" target="_blank" rel="noopener noreferrer" className="bento-item">
-              <img src="images/exp1.png" alt="Portfolio Next.js" width="100%" />
-            </a>
-            <a href="https://github.com/Taharka2000/FrontEnd-ProjetFinal" target="_blank" rel="noopener noreferrer" className="bento-item">
-              <img src="images/exp1.png" alt="Projet React containerisé" width="100%" />
-            </a>
-            <a href="https://github.com/Taharka2000?tab=repositories" target="_blank" rel="noopener noreferrer" className="bento-item">
-              <img src="images/exp3.png" alt="React Router" width="100%" />
-            </a>
+          <div className="project-grid">
+            {projects.map((project) => (
+              <article key={project.title} className={`project-card accent-${project.accent}`}>
+                <div className="project-icon">{project.icon}</div>
+                <h3>{project.title}</h3>
+                <div className="project-role">{project.role}</div>
+                <p>{project.description}</p>
+                <div className="project-tags">
+                  {project.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                  {project.linkLabel}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </a>
+              </article>
+            ))}
           </div>
         </section>
       </main>
