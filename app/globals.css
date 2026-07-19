@@ -373,6 +373,66 @@ h3 {
   }
 }
 
+.work-experience {
+  .jobs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+
+    article {
+      background-color: var(--blue-100);
+      border-radius: 30px;
+      padding: 30px;
+
+      .job-meta {
+        display: flex;
+        justify-content: space-between;
+        color: var(--base);
+        font-weight: 600;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+.bento {
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .bento-item {
+      display: block;
+      border-radius: 20px;
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: ease 0.3s transform;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
 footer {
   text-align: center;
   padding: 10px;

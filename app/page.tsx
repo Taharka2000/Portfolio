@@ -25,6 +25,9 @@ export default function Home() {
               <a href="#skills">Skills</a>
             </li>
             <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
               <a href="#projects">Projects</a>
             </li>
             <li>
@@ -102,93 +105,96 @@ export default function Home() {
               <h3>BackEnd</h3>
               <ul>
                 <li>Node.js</li>
-                <li>Express</li>
-               {/*  <li>SpringBoot</li> */}
+                <li>Express.js</li>
               </ul>
               <h3>CMS</h3>
               <ul>
                 <li>WordPress</li>
               </ul>
-              <h3>Base de Donne</h3>
+              <h3>Base de Donnée</h3>
               <ul>
-                <li>Sql</li>
-                <li>NoSql</li>
+                <li>SQL</li>
+                <li>MongoDB</li>
+              </ul>
+              <h3>DevOps</h3>
+              <ul>
+                <li>Docker</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>GitLab</li>
+                <li>CI/CD</li>
+                <li>DevSecOps</li>
               </ul>
             </div>
             <div className="right-column">
               <h3>A bit About Me</h3>
-              <p> Développeur junior passionné avec une solide formation académique en informatique et une expérience pratique dans le développement de logiciels. et ayant une bonne compréhension des concepts de développement web et mobile. Capable de travailler efficacement en équipe ou de manière autonome, avec un fort désir d apprendre et de s adapter aux nouvelles technologies. Engagé à fournir des solutions de haute qualité et à contribuer activement aux projets de développement.?</p>
-              <p></p>
+              <p>Développeur passionné avec une solide formation académique en informatique et une expérience pratique dans le développement de logiciels, ayant une bonne compréhension des concepts de développement web et mobile. Capable de travailler efficacement en équipe ou de manière autonome, avec un fort désir d&apos;apprendre et de s&apos;adapter aux nouvelles technologies. Engagé à fournir des solutions de haute qualité et à contribuer activement aux projets de développement.</p>
             </div>
           </div>
         </section>
-       {/*  <section className="work-experience container">
-           <h2>
+        <section id="experience" className="work-experience container">
+          <h2>
             <small>Recent</small>
             Work Experience
           </h2>
-          <div className="jobs"> 
-          <article>
-              <figure>
-                <div>
-                  <img src="images/image.png" alt="Workplace-1" width="100%" />
-                  <figcaption>Instructeur Web </figcaption>
-                </div>
-              </figure>
-              <h3>Instructeur online en software developpeur en Part Time</h3>
-              <div>2024-Now</div>
-              <p>Formation et Accompagnement des étudiants à
-                travers des projets pratiques, fournissant un soutien
-                technique personnalisé pour initier ou améliorer leurs
-                compétences en codage.</p>
-            </article> 
-             <article>
-              <figure>
-                <div>
-                  <img src="images/image.png" alt="Workplace-1" width="100%" />
-                  <figcaption>Workplace-1</figcaption>
-                </div>
-              </figure>
-              <h3>Workplace -1</h3>
-              <div>2024-Now</div>
-              <p>Instructor Web</p>
+          <div className="jobs">
+            <article>
+              <h3>Formateur Développement Web</h3>
+              <div className="job-meta">
+                <span>GomyCode</span>
+                <span>Mai 2024 – Présent</span>
+              </div>
+              <p>Formation et encadrement d&apos;apprenants en technologies web (HTML, CSS, JavaScript, React), temps partiel.</p>
             </article>
             <article>
-              <figure>
-                <div>
-                  <img src="images/image.png" alt="Workplace-1" width="100%" />
-                  <figcaption>Workplace-1</figcaption>
-                </div>
-              </figure>
-              <h3>Workplace -1</h3>
-              <div>2024-Now</div>
-              <p>Instructor Web</p>
-            </article> 
+              <h3>Développeur Full Stack</h3>
+              <div className="job-meta">
+                <span>BT Events</span>
+                <span>Nov – Déc 2024</span>
+              </div>
+              <p>Plateforme digitale dédiée à l&apos;organisation, la promotion et la gestion d&apos;événements : vente de billets, gestion des accréditations, collaboration avec des prestataires. – <a href="https://btevents.net" target="_blank" rel="noopener noreferrer">btevents.net</a></p>
+            </article>
+            <article>
+              <h3>Stage Développeur</h3>
+              <div className="job-meta">
+                <span>Dioko</span>
+                <span>Nov – Déc 2024</span>
+              </div>
+              <p>Conception et développement d&apos;un site web destiné aux services clients, facilitant l&apos;accès aux informations et aux solutions d&apos;assistance, avec intégration de paiements en ligne.</p>
+            </article>
+            <article>
+              <h3>Développeur Web</h3>
+              <div className="job-meta">
+                <span>Africa Bloom Corporate</span>
+                <span>Sept 2024</span>
+              </div>
+              <p>Site vitrine pour une entreprise BTP. – <a href="https://africabloomcorporate.com" target="_blank" rel="noopener noreferrer">africabloomcorporate.com</a></p>
+            </article>
           </div>
-        </section>  */}
+        </section>
         <section id="projects" className="bento container">
           <h2>
             <small>Previous</small>
             Completed Projects
           </h2>
           <div className="bento-grid">
-            <a href="https://github.com/Taharka2000/React-Router" className="bento-item">
-              <img src="images/exp2.png" alt="Workplace-1" width="100%" />
+            <a href="https://btevents.net" target="_blank" rel="noopener noreferrer" className="bento-item">
+              <img src="images/exp2.png" alt="BT Events" width="100%" />
             </a>
-            <a href="#" className="bento-item">
-              <img src="images/exp3.png" alt="Workplace-1" width="100%" />
+            <a href="https://africabloomcorporate.com" target="_blank" rel="noopener noreferrer" className="bento-item">
+              <img src="images/exp3.png" alt="Africa Bloom Corporate" width="100%" />
             </a>
-            <a href="#" className="bento-item">
-              <img src="images/exp3.png" alt="Workplace-1" width="100%" />
+            <a href="https://gitlab.com/sammba1/alika12" target="_blank" rel="noopener noreferrer" className="bento-item">
+              <img src="images/exp3.png" alt="Pipeline CI/CD React + Docker" width="100%" />
             </a>
-            <a href="#" className="bento-item">
-              <img src="" alt="Workplace-1" width="100%" />
+            <a href="https://portfolio-eebs.onrender.com" target="_blank" rel="noopener noreferrer" className="bento-item">
+              <img src="images/exp1.png" alt="Portfolio Next.js" width="100%" />
             </a>
-            <a href="#" className="bento-item">
-              <img src="images/exp3.png" alt="Workplace-1" width="100%" />
+            <a href="https://github.com/Taharka2000/FrontEnd-ProjetFinal" target="_blank" rel="noopener noreferrer" className="bento-item">
+              <img src="images/exp1.png" alt="Projet React containerisé" width="100%" />
             </a>
-            <a href="https://github.com/Taharka2000/FrontEnd-ProjetFinal" className="bento-item">
-              <img src="images/exp1.png" alt="Workplace-1" width="100%" />
+            <a href="https://github.com/Taharka2000?tab=repositories" target="_blank" rel="noopener noreferrer" className="bento-item">
+              <img src="images/exp3.png" alt="React Router" width="100%" />
             </a>
           </div>
         </section>
